@@ -9,6 +9,7 @@ Vue.use(VueRouter);
 // 3.准备组件配置对象
 import HeroesList from '../view/HeroesList'
 import HeroesAdd from '../view/HeroesAdd'
+import HeroesEdit from '../view/HeroesEdit'
 import ZbList from '../view/ZbList'
 import JnList from '../view/JnList'
 
@@ -17,6 +18,7 @@ const routes = [
     { path: '/', redirect: '/heroes' },
     { path: '/heroes', component: HeroesList },
     { path: '/heroes/add', component: HeroesAdd },
+    { path: '/heroes/edit/:id', component: HeroesEdit },
     { path: '/zb', component: ZbList },
     { path: '/jn', component: JnList }
 ]

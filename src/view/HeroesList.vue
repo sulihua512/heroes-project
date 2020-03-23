@@ -19,7 +19,7 @@
           <td>{{item.heroesGender}}</td>
           <td>{{item.cTime|formatTime}}</td>
           <td>
-            <button class="btn btn-success">编辑</button>&nbsp;
+            <router-link :to="'/heroes/edit/'+item.id" class="btn btn-success">编辑</router-link>&nbsp;
             <button class="btn btn-danger" @click="delHeroes(item.id)">删除</button>
           </td>
         </tr>
